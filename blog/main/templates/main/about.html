@@ -1,0 +1,46 @@
+{% extends 'main/base.html' %}
+{% load static %}
+
+{% block title %}About Page{% endblock %}
+
+{% block content %}
+
+  <div class="flex flex-col gap-[3.75rem] md:gap-[5.49rem] lg:gap-[7.69rem] lg:px-0 px-6 mt-[3.75rem] md:mt-[4.39rem] lg:mt-[4.62rem] mb-[1.72rem] md:mb-[7.21rem] container mx-auto">
+    <div class="flex flex-col items-center text-center max-w-[47.25rem] mx-auto">
+      <span class="text-[#666] mb-[1.12rem] md:mb-[1.09rem] lg:mb-6 text-[0.71431rem] lg:text-base font-bold leading-[150%] tracking-[0.07025rem]">ABOUT US</span>
+      <h2 class="text-[#333] mb-6 lg:mb-6 text-2xl md:text-[2.14288rem] lg:text-5xl md:max-w-[32.5rem] lg:max-w-[45.5rem] font-bold leading-[1.872rem] md:leading-[2.85rem]">Creative Blog Writting and publishing site</h2>
+      <p class="text-[#666] text-[0.70256rem] lg:text-base md:max-w-[47.25rem] lg:max-w-[63.12rem] leading-[150%]">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+    </div>
+    <img src="{% static 'main/images/about.jpeg' %}" class="rounded-[0.71431rem] h-[12.375rem] md:h-[27.14281rem] lg:h-[38rem] object-cover" alt="">
+    <div class="flex justify-between md:flex-nowrap md:items-end flex-wrap gap-3">
+      <div class="flex flex-col gap-3 md:gap-[1.44rem] lg:gap-8">
+        <span class="text-[#666] text-[0.71431rem] lg:text-base font-bold leading-[150%] tracking-[0.07144rem]">HOW WE WORK</span>
+        <h4 class="text-[#333] text-2xl md:text-[2.14288rem] lg:text-5xl md:max-w-[22.32138rem] lg:max-w-[31.25rem] font-bold leading-[1.98144rem]">I will show you how our team works</h4>
+      </div>
+      <p class="text-[#666] text-[0.71431rem] max-w-[18.57rem] opacity-70 leading-[150%]">Bring to the table win-win market strategies to ensure perfect articles. </p>
+    </div>
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-[1.85rem]">
+      <div class="hover:bg-[#7C4EE4] bg-transparent rounded-[0.71431rem] p-[1.07rem] lg:p-6 flex flex-col items-start group transition-all duration-300">
+        <span class="mb-[0.33rem] lg:mb-2 lg:leading-[6rem] group-hover:text-[#FFF] text-[#666] opacity-10 group-hover:opacity-100 text-[3.21425rem] lg:text-[4.5rem] font-bold leading-[4.28569rem]">01</span>
+        <h4 class="group-hover:text-[#FFF] text-[#7C4EE4] text-[1.07144rem] lg:text-[1.5rem] lg:mb-4 font-bold leading-[1.42819rem] mb-[0.71rem]">Brainstorming</h4>
+        <p class="group-hover:text-[#F7F6FE] text-[#666] opacity-70 mb-[1.48rem] text-[0.71431rem] lg:text-base leading-[150%]">Bring to the table win-win survival strategies to ensure proactive domination. At the end of the day, going forward, a new normal that has evolved from generation X is on the runway heading towards a streamlined cloud solution. User generated</p>
+        <button class="group-hover:text-[#FFF] text-[#666] underline underline-offset-2 text-[0.625rem] lg:text-base font-bold leading-[150%]">learn more</button>
+      </div>
+      <div class="hover:bg-[#7C4EE4] bg-transparent rounded-[0.71431rem] p-[1.07rem] lg:p-6 flex flex-col items-start group transition-all duration-300">
+        <span class="mb-[0.33rem] lg:mb-2 lg:leading-[6rem] group-hover:text-[#FFF] text-[#666] opacity-10 group-hover:opacity-100 text-[3.21425rem] lg:text-[4.5rem] font-bold leading-[4.28569rem]">02</span>
+        <h4 class="group-hover:text-[#FFF] text-[#7C4EE4] text-[1.07144rem] lg:text-[1.5rem] lg:mb-4 font-bold leading-[1.42819rem] mb-[0.71rem]">Analysing</h4>
+        <p class="group-hover:text-[#F7F6FE] text-[#666] opacity-70 mb-[1.48rem] text-[0.71431rem] lg:text-base leading-[150%]">Capitalize on low hanging fruit to identify a ballpark value added activity to beta test. Override the digital divide with additional clickthroughs from DevOps. Nanotechnology immersion along the information highway will close the loop on focusing solely on the bottom line solely on the bottom line.</p>
+        <button class="group-hover:text-[#FFF] text-[#666] underline underline-offset-2 text-[0.625rem] lg:text-base font-bold leading-[150%]">learn more</button>
+      </div>
+      <div class="hover:bg-[#7C4EE4] bg-transparent rounded-[0.71431rem] p-[1.07rem] lg:p-6 flex flex-col items-start group transition-all duration-300">
+        <span class="mb-[0.33rem] lg:mb-2 lg:leading-[6rem] group-hover:text-[#FFF] text-[#666] opacity-10 group-hover:opacity-100 text-[3.21425rem] lg:text-[4.5rem] font-bold leading-[4.28569rem]">03</span>
+        <h4 class="group-hover:text-[#FFF] text-[#7C4EE4] text-[1.07144rem] lg:text-[1.5rem] lg:mb-4 font-bold leading-[1.42819rem] mb-[0.71rem]">News Publishing</h4>
+        <p class="group-hover:text-[#F7F6FE] text-[#666] opacity-70 mb-[1.48rem] text-[0.71431rem] lg:text-base leading-[150%]">Leverage agile frameworks to provide a robust synopsis for high level overviews. Iterative approaches to corporate strategy foster collaborative thinking to further the overall value proposition. Organically grow the holistic world view of disruptive innovation via workplace diversity and empowerment.</p>
+        <button class="group-hover:text-[#FFF] text-[#666] underline underline-offset-2 text-[0.625rem] lg:text-base font-bold leading-[150%]">learn more</button>
+      </div>
+    </div>
+  </div>
+
+  {% include 'main/sections/contact.html' %}
+
+{% endblock %}

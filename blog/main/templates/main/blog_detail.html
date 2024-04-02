@@ -1,0 +1,20 @@
+{% extends 'main/base.html' %}
+
+{% block title %}{{ blog.title }}{% endblock %}
+
+{% block content %}
+
+    <div class="lg:px-0 px-6 mt-12 md:mt-[1.45rem] lg:mt-[5.25rem] mb-[4.87rem] md:mb-[8.36rem] lg:mb-[8.56rem] container mx-auto">
+        <div class="flex items-center gap-[0.84rem] lg:gap-4 mb-[1.19rem] md:mb-[1.74rem] lg:mb-8">
+            <span class="text-[#333] text-[0.63088rem] lg:text-[0.75rem] font-bold leading-[150%]">{{ blog.category }}</span>
+            <small class="text-[#999] text-[0.63088rem] lg:text-[0.75rem] font-medium leading-[150%]">{{ blog.time_published }}</small>
+        </div>
+        <h2 class="text-[#333] text-2xl md:text-[2.5235rem] lg:text-5xl max-w-[16rem] md:max-w-[53.83rem] lg:max-w-[64rem] mb-8 md:mb-[2.92rem] lg:mb-[3.5rem] font-bold leading-[2.05138rem] md:leading-[3.36rem] lg:leading-[4rem]">{{ blog.title }}</h2>
+        <img src="{{ blog.image.url }}" class="h-[12.75rem] md:h-[31.96rem] lg:h-[38rem] lg:rounded-2xl w-full object-cover rounded-[0.84119rem] mb-[3.81rem] md:mb-[3.42rem] lg:mb-16" alt="{{ blog.title }}">
+        <p class="text-[#666] text-[0.84119rem] lg:text-base mb-8 lg:mb-10 leading-[150%]">{{ blog.brief }}</p>
+        <p class="text-[#666] text-[0.84119rem] lg:text-base leading-[150%]">{{ blog.body }}</p>
+    </div>
+
+    {% include 'main/sections/contact.html' %}
+
+{% endblock %}

@@ -1,0 +1,22 @@
+<section id="popular-posts" class="container mx-auto flex flex-col items-start lg:mb-[11.94rem] mb-[6rem] lg:px-0 px-6">
+    <div class="flex justify-between items-center w-full lg:mb-[5.06rem] mb-[2.81rem]">
+        <h2 class="text-[#333] lg:text-5xl md:text-[2.15406rem] text-xl font-bold lg:leading-[3.125rem] leading-[2.24381rem] tracking-[-0.055rem]">Recent Blogs</h2>
+        <a href="{% url 'all_blogs' %}" class="bg-[#7C4EE4] rounded-lg lg:px-12 px-[2.15rem] lg:py-4 py-[0.72rem] text-white lg:text-sm text-[0.62825rem] font-bold leading-[150%]">View All</a>
+    </div>
+    <div class="grid lg:grid-cols-3 md:grid-cols-2 gap-y-[3.94rem] gap-x-4">
+        {% for blog in recent_blogs %}
+            <div class="flex flex-col">
+                <img src="{{ blog.image.url }}" class="max-w-[25rem] w-full md:h-[22.5rem] h-[16.15563rem]  object-cover rounded-2xl" alt="{{ blog.title }}">
+                <div class="mt-10">
+                    <div class="flex gap-2 items-center lg:mb-[1.56rem] mb-[1.13rem]">
+                        <span class="text-[#333] lg:text-xs text-[0.5385rem] font-bold leading-[150%]">{{ blog.category }}</span>
+                        <span class="text-[#999] lg:text-xs text-[0.5385rem] font-medium leading-[150%]">{{ blog.time_published }}</span>
+                    </div>
+                    <h4 class="text-[#333] lg:text-[2rem] md:text-[1.43606rem] text-[1.07rem] lg:mb-[0.44rem] mb-[1.69rem] font-bold lg:leading-[2.8125rem] leading-[1.51944rem] md:tracking-[-0.0625rem]">{{ blog.title }}</h4>
+                    <h5 class="text-[#666] lg:text-base text-[0.718rem] lg:mb-[2.38rem] mb-[1.31rem] leading-[150%]">{{ blog.brief }}</h5>
+                    <a href="{% url 'blog_detail' blog_id=blog.id %}" class="text-[#7C4EE4] lg:text-lg text-[0.80775rem] font-bold leading-[150%] underline">Read More...</a>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+</section>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}My Blog{% endblock %}</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="{% static 'main/css/styles.css' %}">
+</head>
+<body class="flex flex-col min-h-screen bg-[#FAFAFA]">
+
+    {% include 'main/sections/navbar.html' %}
+
+    <div class="flex-1">
+        {% block content %}{% endblock %}
+    </div>
+
+    {% include 'main/sections/footer.html' %}
+
+    <script src="{% static 'main/js/script.js' %}"></script>
+</body>
+</html>

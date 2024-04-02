@@ -1,0 +1,12 @@
+<section id="main-blog" class="container mx-auto lg:px-0 px-6 flex flex-col lg:items-end items-start lg:-space-y-60 lg:mb-[5.06rem] md:mb-[3.64rem]">
+    <img src="{{ blog.image.url }}" class="lg:h-[36rem] md:h-[18.849rem] h-[12.51rem] w-full object-cover rounded-2xl" alt="">
+    <div class="bg-white rounded-2xl max-w-[57.5rem] lg:p-8 lg:pt-8 pt-[1.67rem] lg:pb-[2.63rem] pb-[1.77rem] lg:pr-[6.5rem]">
+        <div class="flex gap-2 items-center lg:mb-[1.56rem] mb-[1.13rem]">
+            <span class="text-[#333] lg:text-xs text-[0.5385rem] font-bold leading-[150%]">{{ blog.category }}</span>
+            <span class="text-[#999] lg:text-xs text-[0.5385rem] font-medium leading-[150%]">{{ blog.time_published }}</span>
+        </div>
+        <h4 class="text-[#333] lg:text-[2rem] text-[1.43606rem] lg:mb-[0.44rem] mb-[1.69rem] font-bold lg:leading-[2.8125rem] leading-[1.51944rem] tracking-[-0.0625rem]">{{ blog.title }}</h4>
+        <h5 class="text-[#666] lg:text-base text-[0.718rem] lg:mb-[2.38rem] mb-[1.31rem] leading-[150%]">{{ blog.brief }}</h5>
+        <a href="{% url 'single_blog' %}" class="lg:py-4 py-[0.72rem] lg:px-12 px-[2.15rem] border rounded-lg border-solid border-[#7C4EE4] text-[#7C4EE4] lg:text-sm text-[0.62825rem] font-bold leading-[150%]">Read More</a>
+    </div>
+</section>
